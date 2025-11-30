@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "Story Book",
+    "title": "A journey of imagination and creativity",
+    "price": "free",
+    "category": "horron",
+    "image": "https://picsum.photos/300/200?random=1"
+  },
+  {
+    "id": 2,
+    "name": "Science Wonders",
+    "title": "Discover the secrets of the universe",
+    "price": 199,
+    "category": "Science",
+    "image": "https://picsum.photos/300/200?random=2"
+  },
+  {
+    "id": 3,
+    "name": "History Legends",
+    "title": "Explore the stories of ancient civilizations",
+    "price": "free",
+    "category": "History",
+    "image": "https://picsum.photos/300/200?random=3"
+  },
+  {
+    "id": 4,
+    "name": "Mystery Maze",
+    "title": "Dive into thrilling mystery and suspense",
+    "price": 120,
+    "category": "Mystery",
+    "image": "https://picsum.photos/300/200?random=4"
+  },
+  {
+    "id": 5,
+    "name": "Business Mastery",
+    "title": "Learn strategies to build a successful business",
+    "price": 299,
+    "category": "Business",
+    "image": "httpsum.photos/300/200?random=5"
+  },
+  {
+    "id": 6,
+    "name": "Kids Fantasy",
+    "title": "Magical stories for children",
+    "price": 80,
+    "category": "Kids",
+    "image": "https://picsum.photos/300/200?random=6"
+  },
+  {
+    "id": 7,
+    "name": "Health & Fitness",
+    "title": "Guide to a strong body and healthy life",
+    "price": 250,
+    "category": "Health",
+    "image": "https://picsum.photos/300/200?random=7"
+  },
+  {
+    "id": 8,
+    "name": "Art & Creativity",
+    "title": "Improve your artistic skills",
+    "price": 145,
+    "category": "Art",
+    "image": "https://picsum.photos/300/200?random=8"
+  },
+  {
+    "id": 9,
+    "name": "Modern Technology",
+    "title": "Future innovations and AI guide",
+    "price": "free",
+    "category": "Technology",
+    "image": "https://picsum.photos/300/200?random=9"
+  },
+  {
+    "id": 10,
+    "name": "Cooking Skills",
+    "title": "Delicious food recipes for beginners",
+    "price": 200,
+    "category": "Cooking",
+    "image": "https://picsum.photos/300/200?random=10"
+  },
+  {
+    "id": 11,
+    "name": "Language Learning",
+    "title": "Learn English fast with practical tips",
+    "price": 130,
+    "category": "Education",
+    "image": "https://picsum.photos/300/200?random=11"
+  },
+  {
+    "id": 12,
+    "name": "Motivation Boost",
+    "title": "Develop discipline & achieve everything",
+    "price": 175,
+    "category": "Motivation",
+    "image": "https://picsum.photos/300/200?random=12"
+  },
+  {
+    "id": 13,
+    "name": "Programming Basics",
+    "title": "Start coding with JavaScript",
+    "price": 299,
+    "category": "Programming",
+    "image": "https://picsum.photos/300/200?random=13"
+  },
+  {
+    "id": 14,
+    "name": "Travel Explorer",
+    "title": "Beautiful destinations around the world",
+    "price": 180,
+    "category": "Travel",
+    "image": "https://picsum.photos/300/200?random=14"
+  },
+  {
+    "id": 15,
+    "name": "Romantic Tales",
+    "title": "Heart touching love stories",
+    "price": 90,
+    "category": "Romance",
+    "image": "https://picsum.photos/300/200?random=15"
+  },
+  {
+    "id": 16,
+    "name": "Horror Nights",
+    "title": "Terrifying stories that will haunt you",
+    "price": "free",
+    "category": "Horror",
+    "image": "https://picsum.photos/300/200?random=16"
+  },
+  {
+    "id": 17,
+    "name": "Spiritual Peace",
+    "title": "Meditation and inner peace guidance",
+    "price": 160,
+    "category": "Spiritual",
+    "image": "https://picsum.photos/300/200?random=17"
+  },
+  {
+    "id": 18,
+    "name": "Entrepreneur Guide",
+    "title": "Become a successful entrepreneur",
+    "price": 350,
+    "category": "Business",
+    "image": "https://picsum.photos/300/200?random=18"
+  },
+  {
+    "id": 19,
+    "name": "Poetry Collection",
+    "title": "Beautiful poems touching the heart",
+    "price": "free",
+    "category": "Poetry",
+    "image": "https://picsum.photos/300/200?random=19"
+  },
+  {
+    "id": 20,
+    "name": "Adventure World",
+    "title": "Unforgettable adventure stories",
+    "price": 125,
+    "category": "Adventure",
+    "image": "https://picsum.photos/300/200?random=20"
+  }
+]
