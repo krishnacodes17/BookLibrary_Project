@@ -1,19 +1,42 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
-
+import axios from "axios";
+import toast from "react-hot-toast";
 
 function Login() {
-
-
-    const {
+  const {
     register,
     handleSubmit,
-    formState: { errors }
-  } = useForm()
-  const onSubmit = (data)=> console.log(data)
+    formState: { errors },
+  } = useForm();
+  const onSubmit = async (data) => {
+    const userInfo = {
+      email: data.email,
+      password: data.password,
+    };
+
+    await axios.post("http://localhost:3000/user/login", userInfo)
+  .then((res) => {
+    if(res.data){
+       toast.success("Login Successfully!");
+
+       setTimeout(()=>{
+         document.getElementById("my_modal_3").close();
+    window.location.reload()
+  localStorage.setItem("User", JSON.stringify(res.data.user));
+
+       },2000)
+   
+  }
+  })
+  .catch((error) => {
+    toast.error(error.response?.data?.message || "Something went wrong");
+    document.getElementById("my_modal_3").close();
+  });
 
 
+  };
 
   return (
     <div>
@@ -25,7 +48,7 @@ function Login() {
               ✕
             </button>
           </form>
-          
+
           {/* Login div Style  */}
           <div className="bg-white shadow-xl rounded-2xl p-8 w-full max-w-sm">
             <h2 className="text-3xl font-bold text-center text-gray-800">
@@ -35,7 +58,7 @@ function Login() {
               Welcome back! Please login to continue.
             </p>
 
-            <form onSubmit={handleSubmit(onSubmit)} >
+            <form onSubmit={handleSubmit(onSubmit)}>
               <div className="mb-4">
                 <label className="block text-gray-700 font-semibold mb-1">
                   Email
@@ -44,9 +67,13 @@ function Login() {
                   type="email"
                   placeholder="Enter your email"
                   className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500"
-                {...register("email", { required: true})}
+                  {...register("email", { required: true })}
                 />
-                {errors.email && <p className="text-sm text-pink-500">This field is required</p>}
+                {errors.email && (
+                  <p className="text-sm text-pink-500">
+                    This field is required
+                  </p>
+                )}
               </div>
 
               <div className="mb-4">
@@ -57,9 +84,13 @@ function Login() {
                   type="password"
                   placeholder="Enter your password"
                   className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500"
-                {...register("Password", { required: true, minLength: 8 })}
-               />
-               {errors.Password && <p className="text-sm text-pink-500">enter password max 8 digit</p>}
+                  {...register("password", { required: true, minLength: 8 })}
+                />
+                {errors.password && (
+                  <p className="text-sm text-pink-500">
+                    enter password max 8 digit
+                  </p>
+                )}
               </div>
 
               <div className="flex justify-between items-center mb-4">
@@ -81,7 +112,10 @@ function Login() {
 
             <p className="text-center text-gray-600 mt-5 text-sm">
               Don't have an account?{" "}
-              <Link to="/signup" className="text-pink-500 font-semibold hover:underline">
+              <Link
+                to="/signup"
+                className="text-pink-500 font-semibold hover:underline"
+              >
                 Sign Up
               </Link>
             </p>

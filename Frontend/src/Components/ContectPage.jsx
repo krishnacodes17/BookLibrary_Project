@@ -1,12 +1,12 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
-
+import toast from 'react-hot-toast';
 function ContectPage() {
 
      const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault(); // page refresh stop
-    alert("Your request is submitted!");
+    toast.success("Your request is submitted! ")
     navigate("/");  // redirect to home
   };
 
